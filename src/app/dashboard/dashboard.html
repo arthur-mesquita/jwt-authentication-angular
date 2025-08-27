@@ -1,0 +1,22 @@
+<div class="dashboard">
+    <h2>Dashboard</h2>
+    @let user = user$ | async;
+    @if (user) {
+        <div>
+            <p id="username"><strong>Username:</strong> {{ user.username }}</p>
+            <p id="email"><strong>Email:</strong> {{ user.email }}</p>
+            <p id="role">
+                <strong>Role:</strong> <em>{{ user.role }}</em>
+            </p>
+            <p id="token">
+                <strong>Token:</strong> <small>{{ user.token }}</small>
+            </p>
+            <button (click)="logout()">Logout</button>
+        </div>
+    }
+    @else {
+        <div>
+            <p>Not logged in.</p>
+        </div>
+    }
+</div>
