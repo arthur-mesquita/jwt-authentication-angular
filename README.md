@@ -2,7 +2,23 @@
 
 A simple JWT authentication example using angular
 
-[Angular instructions](docs/angular.md)
+## How to run it
+
+### Prerequisites
+
+Have docker installed
+
+### Preparing docker container
+
+Run this command
+
+```Bash
+docker compose up -d
+```
+
+### Open in browser
+
+[link to open app in browser](http://localhost:4200)
 
 ## Demo video
 
@@ -11,3 +27,7 @@ A simple JWT authentication example using angular
 ## Tests
 
 ![Project Screenshot](docs/tests-passing.png)
+
+## Angular
+
+[Angular instructions](docs/angular.md)
